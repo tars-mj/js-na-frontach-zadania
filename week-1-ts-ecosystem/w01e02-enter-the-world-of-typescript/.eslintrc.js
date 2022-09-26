@@ -2,6 +2,14 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
+    project: './tsconfig.json',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.ts', '.d.ts'],
+      },
+    },
   },
   env: {
     node: true,
@@ -15,5 +23,8 @@ module.exports = {
     'eslint-config-prettier',
     'plugin:@typescript-eslint/recommended',
   ],
-  rules: {},
+  rules: {
+    '@typescript-eslint/no-explicit-any': 0,
+    'import/prefer-default-export': 0,
+  },
 };
