@@ -1,8 +1,11 @@
 {
   "name": "w01e02-enter-the-world-of-typescript",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "npx vite"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "eslint": "^8.24.0",
@@ -10,7 +13,8 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "prettier": "2.7.1",
-    "vite": "^3.1.3",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
     "vite-plugin-eslint": "^1.8.1"
   }
 }
