@@ -1,5 +1,5 @@
-import { div } from '../framework/dom-creators.js';
-import { Price } from '../types/price.type.js';
+import { div } from '../framework/dom-creators';
+import { Price } from '../types/price.type';
 
 export function cartItemSum({ value, currency = 'PLN' }: Price) {
   const $panelBlock = div('panel-block is-justify-content-end');

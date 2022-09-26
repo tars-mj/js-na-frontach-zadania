@@ -1,7 +1,7 @@
-import { article, p } from '../framework/dom-creators.js';
-import { Item } from '../types/item.model.js';
-import { cartItemSum } from './cart-item-sum.component.js';
-import { cartItem } from './cart-item.component.js';
+import { article, p } from '../framework/dom-creators';
+import { Item } from '../types/item.model';
+import { cartItemSum } from './cart-item-sum.component';
+import { cartItem } from './cart-item.component';
 
 type CartPanel = {
   heading?: string;
